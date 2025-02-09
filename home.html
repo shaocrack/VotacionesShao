@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    
+    <style>
+        .mensaje {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #boton-union {
+            display: none;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #mensaje-5s {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="containere">
+        <a class="item item-1" href="index.html">
+            <span class="item-text">NOBITA</span>
+        </a>
+        <a class="item item-2" href="index.html">
+            <span class="item-text">CORREAZO</span>
+        </a>
+        <a class="item item-3" href="index.html">
+            <span class="item-text">Armijos</span>
+        </a>
+        <a class="item item-4" href="index.html">
+            <span class="item-text">RafaelNoboa</span>
+        </a>
+    </div>
+
+    <p class="mensaje" id="mensaje-inicial">Si mañana no sabes por quien votar</p>
+    
+    <button id="boton-union" onclick="window.location.href='index.html'">Da click aquí y decide :D</button>
+
+    <script>
+        setTimeout(() => {
+          
+           
+            document.getElementById("boton-union").style.display = "block";
+        }, 3000);
+    </script>
+
+</body>
+</html>
